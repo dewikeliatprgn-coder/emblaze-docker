@@ -24,8 +24,8 @@ MySQL 8 (database).
 
 ## 3. Clone Repository
 ```bash
-git clone [URL-REPO-KALIAN]
-cd [NAMA-FOLDER-REPO]
+git clone https://github.com/dewikeliatprgn-coder/emblaze-docker.git
+cd emblaze-docker
 git checkout chore/dockerize-project
 ```
 
