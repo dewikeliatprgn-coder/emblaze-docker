@@ -97,6 +97,6 @@ docker compose down -v
 ## 12. Tim
 | Nama | Student ID | Kontribusi |
 |------|------------|------------|
-| [Nama] | [ID] | [mis. Dockerfile dan compose] |
+| [Dewi Fansiska] | [012202500048] | [Dockerfile, compose.yaml, README, perbaikan healthcheck, setup repo/PR] |
 | [Nama] | [ID] | [mis. README dan testing] |
 | [Nama] | [ID] | [mis. laporan dan video] |
