@@ -17,7 +17,7 @@ MySQL 8 (database).
 
 ## 2. Prerequisites
 - Docker Desktop (running)
-- - Docker version tested: `Docker version 28.5.1, build e180ab8`
+- Docker version tested: `Docker version 28.5.1, build e180ab8`
 - Docker Compose version tested: `Docker Compose version v2.40.2-desktop.1`
 - Git
 - Port **8080** dan **3000** harus kosong di komputer kamu
@@ -89,6 +89,7 @@ docker compose down -v
 | Port 8080 dipakai | Program lain memakai 8080 | Ubah `"8080:80"` di `compose.yaml` jadi port lain |
 | Login gagal / tidak ada respon | Backend belum jalan atau frontend masih memanggil IP lama | Cek `docker compose ps` dan `docker compose logs backend` |
 | Backend gagal konek DB | MySQL belum siap | Tunggu `db` healthy, lalu `docker compose restart backend` |
+| MySQL belum menerima koneksi saat backend start |git pull(healthcheck terbaru),docker compose down -v, lalu docker compose up --build -d |
 
 ## 11. Known Limitations
 - Data database tersimpan di Docker volume `db-data`, hilang jika memakai `down -v`.
@@ -97,6 +98,6 @@ docker compose down -v
 ## 12. Tim
 | Nama | Student ID | Kontribusi |
 |------|------------|------------|
-| [Dewi Fansiska] | [012202500048] | [Dockerfile, compose.yaml, README, perbaikan healthcheck, setup repo/PR] |
+| Dewi Fansiska | 012202500048 | Dockerfile, compose.yaml, README, perbaikan healthcheck, setup repo/PR |
 | [Nama] | [ID] | [mis. README dan testing] |
 | [Nama] | [ID] | [mis. laporan dan video] |
